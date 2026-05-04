@@ -3,24 +3,24 @@
 ```mermaid
 flowchart TD
     classDef nd fill:#f8fafc,stroke:#00c4cc,color:#457b9d
-    classDef sg fill:#f1f5f9,stroke:#00f2ff,color:#457b9d    
+    classDef sg fill:#f1f5f9,stroke:#00f2ff,color:#457b9d 
 
-	subgraph P["PRODUCT"]
-	    REQ["*.spec.md"]:::nd
+    subgraph P["PRODUCT"]
+        REQ["*.spec.md"]:::nd
     end
-    
+
     subgraph T["TECHNOLOGY"]
-	    AGT["AGENTS.md"]:::nd
-    end
+        AGT["AGENTS.md"]:::nd
+    end  
 
-    subgraph I["PROJECT"]
+    subgraph S["SOLUTION"]
         COD[Source Code]:::nd
     end
-    
-    REQ -->|/codify| COD
-    AGT -.-> COD
 
-    class P,T,I sg
+    REQ -->|/codify| COD
+    AGT -.-> COD  
+
+    class P,T,S sg
 ```
 
 ## Commands

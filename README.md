@@ -10,3 +10,7 @@ Manage the rocket fleet, plan and confirm or cancel launches, as well as record 
 Payments and refunds are processed through a fictional payment gateway. 
 
 It is an MVP, so it does not require authentication or storage features.
+
+---
+
+C:\Users\alber\AppData\Local\JetBrains\IntelliJIdea2026.1\aia\agents\.agents\skills
