@@ -13,4 +13,11 @@ It is an MVP, so it does not require authentication or storage features.
 
 ---
 
-C:\Users\alber\AppData\Local\JetBrains\IntelliJIdea2026.1\aia\agents\.agents\skills
+- **Repository**: https://github.com/AlbertoBasaloAcademy/dipta-sdd-java
+
+- **Author**: [Alberto Basalo](https://albertobasalo.dev)
+- **Ai Code Academy**: [AI code Academy](https://aicode.academy)
+- **Socials**:
+  - [X](https://x.com/albertobasalo)
+    - [LinkedIn](https://www.linkedin.com/in/albertobasalo/)
+    - [GitHub](https://github.com/albertobasalo)
