@@ -1,2 +1,3 @@
 # dipta-sdd-java
-Desarrollo con IA SDD para Diputació de Tarragona usando Java
+
+Desarrollo con IA Spec-Driven Development para Diputació de Tarragona usando Java
