@@ -1,4 +1,4 @@
-# Sesión 1. Ecosistema y vibraciones
+# Session 1. 
 
 ## 1. Ecosystem
 
@@ -64,43 +64,43 @@ ng new AstroBookings
 
 ## 2. Vibes
 
-### 2.1 Health-check Vibes
+### 2.1 Health check Vibes
 
 ```md
-Create a health-check endpoint for the backend API, and informs about its status in the frontend application.
+Create a health check endpoint for the backend API, and informs about its status in the frontend application.
 ```
 
 ### 2.2. Prompt Engineering Vibes
 
 ```markdown
-# Health-check feature
+# Health check feature
 
 ## Role
 Act as a senior software developer.
 
 ## Task
-Implement a health-check endpoint for the backend API, and informs about its status in the frontend application.
+Implement a health check endpoint for the backend API, and informs about its status in the frontend application.
 
 ## Context
 The backend is a {lang/framework} application, and the frontend is an {lang/framework} application.
 
-The health-check endpoint should return a JSON response with the status and uptime of the server.
+The health check endpoint should return a JSON response with the status and uptime of the server.
 
 The frontend should display this status in a user-friendly way.
 
 ## Steps
-1. Implement the health-check endpoint in the backend.
-2. Create a service in the frontend to consume the health-check endpoint.
+1. Implement the health check endpoint in the backend.
+2. Create a service in the frontend to consume the health check endpoint.
 3. Display the health status in the frontend application.
 
 ## Output
-- Clean and functional code for the health-check feature.
+- Clean and functional code for the health check feature.
 - No unit nor integration tests are required.
 
 ## Verification
 - [ ] The server for the API starts without errors.
 - [ ] The server for the frontend starts without errors.
-- [ ] The health-check endpoint returns the correct JSON response.
+- [ ] The health check endpoint returns the correct JSON response.
 - [ ] The frontend displays the health status.
 ```
 
@@ -109,12 +109,12 @@ The frontend should display this status in a user-friendly way.
 ## 3. AI-Driven Development
 
 ### 3.1. Product Specification
-`fr01-rockets-fleet-mngmnt.spec.md`
+`fr01-rockets-fleet-mng.spec.md`
 
 ```markdown
 # Rockets Fleet Management 
 
-## Problem definion
+## Problem definition
 - As an operator, I want to **register a rocket with its capacity and range of action** to enable its use in launch planning.
 - As an operator, I want to **consult the rocket catalog** to quickly select a vehicle compatible with the destination.
 - As an operator, I want to **update the operational data of a rocket** to maintain reliable information for business decisions.
@@ -123,11 +123,11 @@ The frontend should display this status in a user-friendly way.
 ## Solution overview
 ### Data Model
 - Rocket:
-  - id: string , unique identifier
-  - name: string , unique
-  - capacity: number , [1..9]
-  - range: enum , (Earth, Moon, Mars)
-  - decommissioned?: boolean
+    - id: string , unique identifier
+    - name: string , unique
+    - capacity: number , [1..9]
+    - range: enum , (Earth, Moon, Mars)
+    - decommissioned?: boolean
 
 ### Backend API
 - An endpoint to create a rocket with its capacity and range of action.
@@ -180,13 +180,13 @@ Is a simple system with an REST API at the backend and a web application as a fr
   
 ### Conventions
 - Use conventional commits messaging
-- Code branchs are: `feat/` `fix/` `chore/`
+- Code branches are: `feat/` `fix/` `chore/`
 - Generate short slugs for artifacts and names (less-than-20-chars).
 
 ### Behavior
 - Be extremely concise. Sacrifice grammar for concision.
 - Do not explain if not asked for.
-- Whe you are in doubt, ask questions one by one with closed anaswers. 
+- Whe you are in doubt, ask questions one by one with closed answers. 
 ```
 
 ### 3.3 Prompt Engineering + HITL
@@ -203,16 +203,16 @@ Implement the feature, which includes writing unit test for critical modules.
 
 ## Context
 - A request made by the user with a concrete requirement.
-- An especification file with a feature request or bug to fix.
+- A specification file with a feature request or bug to fix.
 
 ## Steps
 1. **Think before coding**. Reason about the problem and ask to clarify.
-2. **Simplicity first**. Avoid complex, clever or YAGNI solutions.
+2. **Simplicity first**. Avoid complex, clever or Y.A.G.N.I. solutions.
 3. **Surgical changes**. Write the minimum amount of code.
 4. **Goal-driven execution**. Keep working until verified.
   
 ## Output
-- A fully functional code with green unit test that fullfills the criteria.
+- A fully functional code with green unit test that fulfills the criteria.
 
 ## Verification
 - [ ] Code compiles without errors.
