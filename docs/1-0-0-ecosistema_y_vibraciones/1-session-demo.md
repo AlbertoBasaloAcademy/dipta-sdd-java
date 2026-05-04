@@ -58,6 +58,13 @@ ng new AstroBookings
   --style=css
   --zoneless
   --dry-run
+
+
+# Vue
+npm install -g @vue/cli
+vue create astro-bookings
+
+
 ```
 
 ---
