@@ -1,6 +1,8 @@
 # dipta-sdd-java
 
-AI coding Spec-Driven Development para Dip. de Tarragona Java-Intellij edition
+Spec-Driven Development 
+Dip. Tarragona 
+Java-IntelliJ edition
 
 ## AstroBookings 
 A REST API and a web application for the fictional space tourism company (AstroBookings).
