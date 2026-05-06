@@ -1,18 +1,53 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HealthStatus />
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HealthStatus />
+    <hr />
+    <RocketForm :rocket="editingRocket" @success="onSuccess" @cancel="onCancel" />
+    <RocketCatalog :rockets="rockets" @edit="onEdit" @refresh="fetchRockets" />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import HealthStatus from './components/HealthStatus.vue'
+import RocketCatalog from './components/RocketCatalog.vue'
+import RocketForm from './components/RocketForm.vue'
+import { getAllRockets } from './services/rocketService'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    HealthStatus
+    HealthStatus,
+    RocketCatalog,
+    RocketForm
+  },
+  data() {
+    return {
+      rockets: [],
+      editingRocket: null
+    }
+  },
+  async created() {
+    await this.fetchRockets();
+  },
+  methods: {
+    async fetchRockets() {
+      try {
+        this.rockets = await getAllRockets();
+      } catch (error) {
+        console.error('Error fetching rockets:', error);
+      }
+    },
+    onEdit(rocket) {
+      this.editingRocket = rocket;
+    },
+    onSuccess() {
+      this.editingRocket = null;
+      this.fetchRockets();
+    },
+    onCancel() {
+      this.editingRocket = null;
+    }
   }
 }
 </script>
