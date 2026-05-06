@@ -1,3 +1,8 @@
+---
+name : codify
+description : Write code to implement a feature.
+parameters : A request or a specification file with a feature or bug to fix.
+---
 # Write code to implement a feature
 
 ## Role
