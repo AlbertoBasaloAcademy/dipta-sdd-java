@@ -1,4 +1,4 @@
-# dipta-sdd-java
+# dipta-sdd-java GRUPO1
 
 Spec-Driven Development 
 Dip. Tarragona 
