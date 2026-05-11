@@ -14,7 +14,7 @@ parameters : A request or a specification file with a feature or bug to fix.
 ---
 ```
 
-- [codify.md](../1-ecosystem-vibes/assets/1-codify.md) contains the detailed guidelines for the codify command prompt.
+- Copy the content of `codify.md` from session 1.
 
 ---
 
@@ -22,7 +22,7 @@ parameters : A request or a specification file with a feature or bug to fix.
 
 ### 2.1 AGENTS.md to rule them all
 
-> `initialize this project` 
+> `initialize this project`
 
 ```yaml
 ---
@@ -31,7 +31,7 @@ description : Initialize the environment by loading all necessary commands, rule
 ---
 ```
 
-- [initialize.md](./assets/2-initizalize.md) to be copied to `/.agents/skills/initialize/SKILL.md`.
+- [initialize.md](assets/2-initialize.md) to be copied to `/.agents/skills/initialize/SKILL.md`.
 
 - [AGENTS.template.md](./assets/2-AGENTS.template.md) to be copied to `/.agents/skills/initialize/AGENTS.template.md`.
 
@@ -51,8 +51,6 @@ applyTo : back/**/*.java
 
 ---
 
-
-
 ## 3. Skills
 
 ### 3.1 Refactor as a skill set
@@ -66,12 +64,12 @@ description : Write code to implement a feature, following the codify command pr
 ---
 ```
 
-> `follow java rules` 
+> `follow java rules to refactor backend code`
 
 ```yaml
 ---
 name : java
-description : Java coding standards for Spring Boot services: naming, immutability, Optional usage, streams, exceptions, generics, and project layout. To be used as a reference for writing or reviewing Java code in the back-end service, ensuring consistency and adherence to best practices.
+description : Java coding standards for Spring Boot services; naming, immutability, Optional usage, streams, exceptions, generics, and project layout. To be used as a reference for writing or reviewing Java code in the back-end service, ensuring consistency and adherence to best practices.
 ---
 ```
 
@@ -80,12 +78,11 @@ description : Java coding standards for Spring Boot services: naming, immutabili
 ### 3.2 Fallbacks
 
 - ClaudeCode, Codex, Cursor and Copilot can read skills and use them automatically.
-- With IntelliJ you can mention the `@skill-name/SKILL.md` in the prompt to use it.
-
+- With IntelliJ, you can mention the `@skill-name/SKILL.md` in the prompt to use it.
 
 ### 3.3 Find skills
 
-- **Marketplaces**: 
+- **Marketplaces**:
   - [From Vercel](https://skills.sh/)
   - [From Awesome Copilot](https://awesome-copilot.github.com/skills/)
   - [From Anthropic](https://github.com/anthropics/skills)
@@ -101,4 +98,4 @@ description : Java coding standards for Spring Boot services: naming, immutabili
 
 - [write-a-skill.md](https://github.com/mattpocock/skills/blob/main/skills/productivity/write-a-skill/SKILL.md) to be copied to `/.agents/skills/write-a-skill/SKILL.md`.
 
-- [Skill Creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator) too be copied to `/.agents/skills/skill-creator/`.
+- [Skill Creator](https://github.com/anthropics/skills/tree/main/skills/skill-creator) to be copied to `/.agents/skills/skill-creator/`.
