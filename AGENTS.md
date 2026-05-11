@@ -11,8 +11,8 @@
 
 ### Environment
 
-- **.junie**: Folder for agent-related files such as skills, prompts, and specs.
-- **product**: Folder for product-related files such as specs, plans, and documentation.
+- **.agents**: Folders for agent-related files such as skills, prompts, and specs.
+- **.product**: Folder for product-related files such as specs, plans, and documentation.
 - **back, front**: Array of source code folders relevant to the project.
 - **OS dev**: `Windows`
 - **Terminal**: `PowerShell`
@@ -23,11 +23,8 @@
 ````text
 .                         # Project root  
 ├── AGENTS.md             # This file with the main guidelines for agents
-├── .junie/               # Files related to agents (skills, commands, etc)
-│   ├── memory/           # Agent session memory
-│   ├── plans/            # Execution plans
-│   └── prompts/          # Reusable prompts directory
-├── product/              # Files related to the product (specs, plans, etc)
+├── .agents/              # Files related to agent skills and templates
+├── .product/              # Files related to the product (specs, plans, etc)
 ├── CHANGELOG.md          # Project history and updates
 ├── README.md             # Human-friendly project summary
 ├── back/                 # Backend source code folder
@@ -39,7 +36,7 @@
 
 — Use conventional commit messaging
 — Code branches prefixes must be: `feat/` | `fix/` | `chore/`
-— Generate short slugs for artifacts and names (less-than-20-chars).
+— Generate short slugs for artifacts and names (fewer-than-20-chars).
 
 ## Product
 
@@ -113,4 +110,4 @@ Touch only what you must. Clean up only your own mess.
 4. Goal-Driven Execution
 Define success criteria. Loop until verified.
 
-> last updated: May 2026
+> last updated: May 11, 2026

@@ -2,7 +2,7 @@
 name: codify
 description: Generate code for a given implementation plan, following the defined steps and tasks for each tier. Use this skill with an implementation plan to create clear and actionable code for its implementation.
 ---
-# Codify skill 
+# Codify skill
 
 Write code to implement a feature
 
@@ -36,7 +36,7 @@ One of the following inputs:
 
 ### Step 4: Goal-driven execution
 - [ ] Keep working until all specified verification steps are successfully completed.
-  
+
 ## Output
 
 - [ ] Fully functional code that fulfills the criteria.

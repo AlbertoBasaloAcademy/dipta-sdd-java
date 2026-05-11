@@ -16,8 +16,8 @@ Create a new specification for a feature or technical requirement. Define the pr
 
 - The requirement or user story describing the desired feature or bug fix.
 - Use the following conventions to write the specification:
-    1. The [Specification template](./spec.template.md) for writing specifications.
-    2. The [EARS convention](./EARS.convention.md) for defining acceptance criteria.
+    1. The [Specification template](spec.template.md) for writing specifications.
+    2. The [EARS convention](EARS.convention.md) for defining acceptance criteria.
     3. The model design convention below for defining entities and relationships.
 
 <model-design-convention>

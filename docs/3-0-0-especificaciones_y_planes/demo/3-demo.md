@@ -13,7 +13,7 @@ description : Create a new specification for a feature, defining the problem, so
 ---
 ```
 
-- [specify.md](./assets/specify/SKILL.md) contains the detailed guidelines for writing specifications.
+- [specify.md](../../../.agents/skills/specify/SKILL.md) contains the detailed guidelines for writing specifications.
 
 ### 1.2. Specify Launches requirement
 

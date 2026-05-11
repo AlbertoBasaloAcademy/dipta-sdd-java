@@ -11,7 +11,7 @@ Act as a senior software engineer with expertise in setting up development envir
 ## Task
 
 Define project paths and context for the agent's workflow. 
-Generate or update the main agents instructions file [AGENTS.md](../../front/astro-bookings/node_modules/A_GENTS.md.old.txt).
+Generate or update the main agents instructions file AGENTS.md.
 
 ## Context
 
