@@ -14,7 +14,7 @@ parameters : A request or a specification file with a feature or bug to fix.
 ---
 ```
 
-- Copy the content of `codify.md` from session 1.
+- [codify.md](../../1-0-0-ecosistema_y_vibraciones/demo/assets/1-codify.md) contains the detailed guidelines for the codify command prompt.
 
 ---
 
@@ -31,9 +31,9 @@ description : Initialize the environment by loading all necessary commands, rule
 ---
 ```
 
-- [initialize.md](assets/2-initialize.md) to be copied to `/.agents/skills/initialize/SKILL.md`.
+- [initialize.md](./assets/initialize/SKILL.md) to be copied to `/.agents/skills/initialize/SKILL.md`.
 
-- [AGENTS.template.md](./assets/2-AGENTS.template.md) to be copied to `/.agents/skills/initialize/AGENTS.template.md`.
+- [AGENTS.template.md](./assets/initialize/AGENTS.template.md) to be copied to `/.agents/skills/initialize/AGENTS.template.md`.
 
 ### 2.2 Language rules
 
@@ -47,9 +47,11 @@ applyTo : back/**/*.java
 ---
 ```
 
-- [java.md](./assets/2-java.md) contains the detailed coding rules for Java in Spring Boot services.
+- [java.md](./assets/java.md) contains the detailed coding rules for Java in Spring Boot services.
 
 ---
+
+
 
 ## 3. Skills
 
@@ -64,7 +66,7 @@ description : Write code to implement a feature, following the codify command pr
 ---
 ```
 
-> `follow java rules to refactor backend code`
+> `follow java rules`
 
 ```yaml
 ---
@@ -73,12 +75,13 @@ description : Java coding standards for Spring Boot services; naming, immutabili
 ---
 ```
 
-- [java.md](./assets/2-java.md) to be copied to `/.agents/skills/java/SKILL.md`.
+- [java.md](./assets/java.md) to be copied to `/.agents/skills/java/SKILL.md`.
 
 ### 3.2 Fallbacks
 
 - ClaudeCode, Codex, Cursor and Copilot can read skills and use them automatically.
 - With IntelliJ, you can mention the `@skill-name/SKILL.md` in the prompt to use it.
+
 
 ### 3.3 Find skills
 

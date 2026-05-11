@@ -4,7 +4,7 @@
 
 ### 1.1. Specify
 
-> `/specify this requirement` 
+> `/specify this requirement`
 
 ```yaml
 ---
@@ -13,7 +13,7 @@ description : Create a new specification for a feature, defining the problem, so
 ---
 ```
 
-- [specify.md](./assets/3-specify.md) contains the detailed guidelines for writing specifications.
+- [specify.md](./assets/specify/SKILL.md) contains the detailed guidelines for writing specifications.
 
 ### 1.2. Specify Launches requirement
 
@@ -25,7 +25,7 @@ description : Create a new specification for a feature, defining the problem, so
 
 ### 2.1 Planify
 
-> `/planify this specification, improvement or bug to fix` 
+> `/planify this specification, improvement or bug to fix`
 
 ```yaml
 ---
@@ -34,7 +34,7 @@ description : Generate a set of implementation plans for a given specification, 
 ---
 ```
 
-- [planify.md](./assets/3-planify.md) contains the detailed guidelines for creating implementation plans from specifications.
+- [planify.md](./assets/planify/SKILL.md) contains the detailed guidelines for creating implementation plans from specifications.
 
 ### 2.2 Planify Launches specification
 
