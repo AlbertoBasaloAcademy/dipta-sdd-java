@@ -15,7 +15,7 @@ Create a set of implementation plans for a given specification, improvement, or 
 
 ## Context
 
-- The [Implementation Plan template](./plan.template.md) for writing implementation plans.
+- The [Implementation Plan template](plan.template.md) for writing implementation plans.
 
 And one of the following inputs:
 - A specification file that defines the problem, solution, and verification criteria for a feature or technical requirement.

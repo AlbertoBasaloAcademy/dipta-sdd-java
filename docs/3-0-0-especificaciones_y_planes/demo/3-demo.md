@@ -34,7 +34,7 @@ description : Generate a set of implementation plans for a given specification, 
 ---
 ```
 
-- [planify.md](./assets/planify/SKILL.md) contains the detailed guidelines for creating implementation plans from specifications.
+- [planify.md](../../../.agents/skills/planify/SKILL.md) contains the detailed guidelines for creating implementation plans from specifications.
 
 ### 2.2 Planify Launches specification
 

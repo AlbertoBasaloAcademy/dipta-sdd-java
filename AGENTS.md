@@ -24,7 +24,7 @@
 .                         # Project root  
 ├── AGENTS.md             # This file with the main guidelines for agents
 ├── .agents/              # Files related to agent skills and templates
-├── .product/              # Files related to the product (specs, plans, etc)
+├── .product/             # Files related to the product (specs, plans, etc)
 ├── CHANGELOG.md          # Project history and updates
 ├── README.md             # Human-friendly project summary
 ├── back/                 # Backend source code folder
@@ -89,7 +89,7 @@ back/                             # Tier source root
   - Lint: `npm run lint`
 
 - **Folder structure**:
-````text
+````text[SKILL.md](.agents/skills/planify/SKILL.md)
 front/astro-bookings/             # Tier source root
 ├── package.json                  # Main tech file
 └── src                           # Source code folder
@@ -98,6 +98,7 @@ front/astro-bookings/             # Tier source root
 - **Agent Skills**:
   - initialize: Initialize the environment by loading all necessary commands, rules, and skills.
   - codify: Implement a feature, including writing unit tests for critical modules.
+  - planify: Generate a set of implementation plans for a given specification, improvement, or bug to fix
 
 ## Principles
 
