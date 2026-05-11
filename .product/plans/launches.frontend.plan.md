@@ -1,5 +1,7 @@
 ---
 plan-type: spec-implementation
+spec: ../specs/launches.spec.md
+status: in-progress
 tier: frontend
 ---
 ## spec-implementation - launches - frontend
