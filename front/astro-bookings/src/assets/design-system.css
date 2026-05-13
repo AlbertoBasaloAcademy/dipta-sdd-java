@@ -1,0 +1,133 @@
+:root {
+  /* Colors */
+  --color-surface: #121318;
+  --color-surface-dim: #121318;
+  --color-surface-bright: #38393f;
+  --color-surface-container-lowest: #0d0e13;
+  --color-surface-container-low: #1a1b21;
+  --color-surface-container: #1e1f25;
+  --color-surface-container-high: #292a2f;
+  --color-surface-container-highest: #34343a;
+  --color-on-surface: #e3e1e9;
+  --color-on-surface-variant: #d0c6ab;
+  --color-outline: #999077;
+  --color-outline-variant: #4d4732;
+  --color-primary: #fff6df;
+  --color-on-primary: #3a3000;
+  --color-primary-container: #ffd700;
+  --color-on-primary-container: #705e00;
+  --color-secondary: #bdf4ff;
+  --color-on-secondary: #00363d;
+  --color-secondary-container: #00e3fd;
+  --color-on-secondary-container: #00616d;
+  --color-tertiary: #fcf3ff;
+  --color-on-tertiary: #3b2754;
+  --color-tertiary-container: #e7d1ff;
+  --color-on-tertiary-container: #6b5586;
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+
+  /* Typography */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-unit: 8px;
+  --container-max: 1280px;
+
+  /* Rounded */
+  --rounded-sm: 2px;
+  --rounded-md: 6px;
+  --rounded-lg: 8px;
+  --rounded-xl: 12px;
+  --rounded-full: 9999px;
+
+  /* Glassmorphism */
+  --glass-level-2-bg: rgba(52, 52, 58, 0.2);
+  --glass-blur: 20px;
+  --glass-stroke: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-surface);
+  background: radial-gradient(circle at center, #1e1f25 0%, #121318 100%);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .label-md {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+}
+
+.glass-panel {
+  background: var(--glass-level-2-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-stroke);
+  border-radius: var(--rounded-xl);
+  padding: 24px;
+}
+
+.btn-primary {
+  font-family: var(--font-display);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  border: none;
+  border-radius: var(--rounded-lg);
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ffe16d;
+  box-shadow: 0 0 15px rgba(255, 246, 223, 0.4);
+}
+
+.btn-secondary {
+  font-family: var(--font-display);
+  background-color: transparent;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--rounded-lg);
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(0, 227, 253, 0.1);
+}
+
+.input-field {
+  background-color: var(--color-surface-container-lowest);
+  color: var(--color-on-surface);
+  border: 1px solid var(--color-outline-variant);
+  border-radius: var(--rounded-lg);
+  padding: 12px;
+  font-family: var(--font-body);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+}
+
+.badge-celestial {
+  background-color: var(--color-tertiary-container);
+  color: var(--color-on-tertiary-container);
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: var(--rounded-full);
+  display: inline-block;
+}
