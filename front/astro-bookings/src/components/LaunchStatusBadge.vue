@@ -1,5 +1,5 @@
 <template>
-  <span :class="['badge', statusClass]">
+  <span :class="['badge-celestial', statusClass]">
     {{ status }}
   </span>
 </template>
@@ -21,27 +21,37 @@ export default {
 </script>
 
 <style scoped>
-.badge {
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8em;
-  font-weight: bold;
+.badge-celestial {
+  padding: 4px 12px;
+  border-radius: var(--rounded-full);
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-block;
+  background-color: var(--color-surface-container-high);
+  color: var(--color-on-surface-variant);
 }
-.status-created {
-  background-color: #e0e0e0;
-  color: #616161;
-}
+
 .status-confirmed {
-  background-color: #e3f2fd;
-  color: #1976d2;
+  background-color: var(--color-tertiary-container);
+  color: var(--color-on-tertiary-container);
+  box-shadow: 0 0 10px rgba(231, 209, 255, 0.2);
 }
+
 .status-completed {
-  background-color: #e8f5e9;
-  color: #2e7d32;
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
 }
+
 .status-cancelled {
-  background-color: #ffebee;
-  color: #c62828;
+  background-color: var(--color-error);
+  color: var(--color-on-error);
+}
+
+.status-created {
+  border: 1px solid var(--color-outline-variant);
+  background: transparent;
 }
 </style>

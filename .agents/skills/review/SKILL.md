@@ -22,9 +22,9 @@ One of the following scopes:
 
 ### Review types
 Load the corresponding guide based on the requested review type:
-- `quality` → [Clean Code Best Practices](./quality.guidelines.md)
-- `compliance` → [Compliance Guidelines](./compliance.guidelines.md)
-- `accessibility` → [Accessibility Guidelines](./accessibility.guidelines.md)
+- `quality` → [Clean Code Best Practices](quality.guidelines.md)
+- `compliance` → [Compliance Guidelines](compliance.guidelines.md)
+- `accessibility` → [Accessibility Guidelines](accessibility.guidelines.md)
 
 ## Steps
 

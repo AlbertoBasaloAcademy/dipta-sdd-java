@@ -1,38 +1,40 @@
 <template>
-  <div class="launch-form">
+  <div class="launch-form glass-panel">
     <h3>{{ isEditing ? 'Edit Launch' : 'Schedule Launch' }}</h3>
-    <form @submit.prevent="submit">
-      <div>
-        <label>Rocket:</label>
-        <select v-model="form.rocketId" required :disabled="isEditing">
+    <form @submit.prevent="submit" class="cosmic-form">
+      <div class="form-group">
+        <label for="rocket-select" class="label-md">Rocket</label>
+        <select id="rocket-select" v-model="form.rocketId" required :disabled="isEditing" class="input-field">
           <option v-for="rocket in rockets" :key="rocket.id" :value="rocket.id">
             {{ rocket.name }}
           </option>
         </select>
       </div>
-      <div>
-        <label>Launch Time:</label>
-        <input type="datetime-local" v-model="form.launchTime" required />
+      <div class="form-group">
+        <label for="launch-time-input" class="label-md">Launch Time</label>
+        <input id="launch-time-input" type="datetime-local" v-model="form.launchTime" required class="input-field" />
       </div>
-      <div>
-        <label>Price per Ticket:</label>
-        <input type="number" step="0.01" v-model.number="form.pricePerTicket" required />
+      <div class="form-group">
+        <label for="price-input" class="label-md">Price per Ticket</label>
+        <input id="price-input" type="number" step="0.01" v-model.number="form.pricePerTicket" required class="input-field" />
       </div>
-      <div>
-        <label>Min. Occupancy:</label>
-        <input type="number" v-model.number="form.minimumOccupancy" required />
+      <div class="form-group">
+        <label for="occupancy-input" class="label-md">Min. Occupancy</label>
+        <input id="occupancy-input" type="number" v-model.number="form.minimumOccupancy" required class="input-field" />
       </div>
-      <div v-if="isEditing">
-        <label>Status:</label>
-        <select v-model="form.status">
+      <div v-if="isEditing" class="form-group">
+        <label for="status-select" class="label-md">Status</label>
+        <select id="status-select" v-model="form.status" class="input-field">
           <option value="created">Created</option>
           <option value="confirmed">Confirmed</option>
           <option value="completed">Completed</option>
           <option value="cancelled">Cancelled</option>
         </select>
       </div>
-      <button type="submit">{{ isEditing ? 'Update' : 'Schedule' }}</button>
-      <button type="button" @click="$emit('cancel')">Cancel</button>
+      <div class="form-actions">
+        <button type="submit" class="btn-primary">{{ isEditing ? 'Update' : 'Schedule' }}</button>
+        <button type="button" @click="$emit('cancel')" class="btn-secondary">Cancel</button>
+      </div>
     </form>
   </div>
 </template>
@@ -98,15 +100,40 @@ export default {
 
 <style scoped>
 .launch-form {
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  padding: 10px;
+  margin-bottom: 40px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.launch-form div {
-  margin-bottom: 10px;
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
 }
-label {
-  display: inline-block;
-  width: 120px;
+
+.cosmic-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-md {
+  color: var(--color-on-surface-variant);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
 }
 </style>

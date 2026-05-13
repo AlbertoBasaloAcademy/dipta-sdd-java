@@ -51,9 +51,7 @@ The specification defines:
 
 Generate functional frontend code such as:
 - HTML/CSS/JavaScript
-- React
 - Vue
-- Tailwind-based systems
 
 ## Verification
 
