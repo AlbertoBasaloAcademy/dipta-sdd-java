@@ -18,7 +18,7 @@ Given a specification file, write and run E2E tests that cover all acceptance cr
 
 ### References
 - Load the guide for the E2E framework in use:
-  - Playwright → [Playwright guidelines](./playwright.md)
+  - Playwright → [Playwright guidelines](playwright.md)
   - *(add further framework guides here as needed)*
 
 ## Steps
