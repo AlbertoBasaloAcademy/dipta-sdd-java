@@ -10,6 +10,7 @@ flowchart TD
   subgraph P["PRODUCT"]
       SPC["{slug}.spec.md"]:::nd
       PLN["{slug}.{source?}.{tier?}.plan.md"]:::nd
+      RPT["{slug}.report.md"]:::nd
   end
 
   subgraph T["TECHNOLOGY"]
@@ -20,16 +21,20 @@ flowchart TD
 
   subgraph S["SOLUTION"]
       COD[Source Code]:::nd
+      E2E["E2E Tests"]:::nd
   end
 
   HUM -->|/initialize| AGT
   HUM -->|/specify| SPC
   HUM -->|/planify| PLN
+  RPT -->|/planify| PLN
   AGT -.-> SPC  
   SKL & RUL -.-> COD  
   SKL -.-> PLN
   SPC -->|/planify| PLN
   PLN -->|/codify| COD
+  COD -->|/verify| E2E
+  COD -->|/review| RPT
 
   class P,T,S sg
 ```
@@ -44,6 +49,9 @@ flowchart TD
 
 - `/codify` - Run the implementation cycle for one specification: generate plans, produce code, and validate with tests.
 
+- `/verify` - Run end-to-end tests to ensure code meets specifications.
+
+- `/review` - Review code for guidelines compliance and best practices.
 
 ## Artifacts
 
@@ -59,9 +67,12 @@ flowchart TD
 
 - `spec-slug.tier.plan` - A set of implementation plans derived from a single specification, or bug-fix, defining ordered steps and tasks for each involved tier.
 
+- `slug.report.md` - A report generated during the review process, such as accessibility and compliance reports.
+  
 ### Solution
 
 - `Source Code` - The implementation of the system, including unit tests.
 
+- `E2E Tests` - End-to-end tests that verify the implemented code meets the defined specifications and acceptance criteria.
 
 

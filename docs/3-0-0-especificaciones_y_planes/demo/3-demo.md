@@ -8,12 +8,12 @@
 
 ```yaml
 ---
-name : specify
-description : Create a new specification for a feature, defining the problem, solution, and verification criteria. This serves as the source of truth for implementation and testing.
+name: specify
+description: Writes a specification file for a new feature or complex improvement. Use this skill when the user provides a requirement, user story, or feature description that needs to be formally defined before implementation. Trigger on phrases like "write a spec", "specify this feature", "create a spec for", or whenever a new feature needs a spec file before planning or coding.
 ---
 ```
 
-- [specify.md](../../../.agents/skills/specify/SKILL.md) contains the detailed guidelines for writing specifications.
+- [specify.md](./assets/specify/SKILL.md) contains the detailed guidelines for writing specifications.
 
 ### 1.2. Specify Launches requirement
 
@@ -29,12 +29,12 @@ description : Create a new specification for a feature, defining the problem, so
 
 ```yaml
 ---
-name : planify
-description : Generate a set of implementation plans for a given specification, outlining the ordered steps and tasks required for each tier. To be used with a specification, improvement, or bug report, to create clear and actionable plans for its implementation.
+name: planify
+description: Generates implementation plan files from a spec, bug report, or review report. Use this skill when the user wants to break down a spec, fix, or review into actionable implementation steps. Trigger on phrases like "planify this", "create a plan for", "break this down", or whenever a spec, fix, or review report is ready to be planned before coding.
 ---
 ```
 
-- [planify.md](../../../.agents/skills/planify/SKILL.md) contains the detailed guidelines for creating implementation plans from specifications.
+- [planify.md](./assets/planify/SKILL.md) contains the detailed guidelines for creating implementation plans from specifications.
 
 ### 2.2 Planify Launches specification
 
@@ -52,7 +52,7 @@ description : Generate a set of implementation plans for a given specification, 
 
 ### 3.2 Spec, plan and codify Booking feature
 
-> `
+> `specify the booking feature to allow users to book a passenger ticket for a rocket launch, including details like name, email and phone number, and booking status (created,  cancelled).`
 
 > `planify the booking.spec.md file to create implementation plans for the backend, frontend tiers.`
 
