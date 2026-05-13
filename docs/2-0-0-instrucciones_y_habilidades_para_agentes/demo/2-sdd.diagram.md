@@ -33,7 +33,7 @@ flowchart TD
 
 - `/initialize` - Create initial technology documentation (/AGENTS.md and skills/) for a project.
 
-- `/codify` - Run the implementation cycle for one specification: generate plans, produce code, and validate with tests.
+- `/codify` - Writes the code and unit tests following a plan, implementing a specification, or a minor requirement.
 
 - `/write-a-skill` - Create a new skill from a human need (Can be a rule set, a workflow, or a utility command).
 

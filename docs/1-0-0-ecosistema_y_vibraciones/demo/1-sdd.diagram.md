@@ -25,7 +25,7 @@ flowchart TD
 
 ## Commands
 
-- `/codify` - Run the implementation cycle for one specification: generate plans, produce code, and validate with tests.
+- `/codify` - Writes the code and unit tests following a plan, implementing a specification, or a minor requirement.
 
 ## Artifacts
 
