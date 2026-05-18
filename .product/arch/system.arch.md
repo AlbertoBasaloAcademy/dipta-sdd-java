@@ -15,11 +15,11 @@ C4Context
 
   System(astrobookings, "AstroBookings", "Manages rocket fleet, launches, and passenger bookings")
 
-  System_Ext(payment_gateway, "Payment Gateway", "Handles fictional financial transactions")
+  System_Ext(payment_gateway, "Payment Gateway", "Planned: Handles fictional financial transactions")
 
   Rel(customer, astrobookings, "Books flights and views status", "HTTPS/Web")
   Rel(staff, astrobookings, "Manages fleet and schedule", "HTTPS/Web")
-  Rel(astrobookings, payment_gateway, "Processes payments", "HTTPS/JSON")
+  Rel(astrobookings, payment_gateway, "Future: Processes payments", "HTTPS/JSON")
 ```
 
 ## C4 Diagram — Containers
@@ -63,4 +63,4 @@ C4Container
 | Source | Target | Protocol | Contract |
 |--------|--------|----------|----------|
 | Web Application | REST API | REST/JSON | Domain-specific endpoints (e.g., /api/rockets, /api/launches) |
-| REST API | Payment Gateway | REST/JSON | Fictional payment processing contract |
+| REST API | Payment Gateway | REST/JSON | Placeholder: Fictional payment processing contract |

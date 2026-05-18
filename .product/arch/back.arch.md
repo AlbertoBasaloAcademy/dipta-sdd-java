@@ -57,15 +57,23 @@ back/src/main/java/academy/aicode/astrobookings/
 | `/launches` | POST | Plan a new launch |
 | `/launches/{id}` | GET | Get launch details |
 | `/launches/{id}` | PUT | Update launch details |
+| `/bookings` | GET | List all bookings |
+| `/bookings` | POST | Create a new booking |
+| `/bookings/{id}` | GET | Get booking details |
+| `/bookings/{id}` | PATCH | Cancel a booking |
+| `/health` | GET | Check system health status |
 
 ## Dependencies between domains
 
 ```mermaid
 graph LR
   Launch -->|assigned to| Rocket
+  Booking -->|associated with| Launch
+  Booking -.->|verifies capacity| Rocket
 ```
 
-- **Launch Service** depends on **Rocket Service** (implicit or explicit) to verify rocket availability and capacity when planning launches.
+- **Launch Service** depends on **Rocket Service** to verify rocket availability and capacity when planning launches.
+- **Booking Service** depends on **Launch Service** and **Rocket Service** to ensure that bookings are made for valid launches and that the rocket capacity is not exceeded.
 
 ## Constraints
 

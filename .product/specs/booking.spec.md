@@ -5,7 +5,10 @@ spec-slug: booking
 
 ## Problem definition
 
-AstroBookings needs a way to record and manage passenger bookings for rocket launches. Currently, the system lacks the ability to book tickets, track passenger information, or manage booking statuses. This functionality is critical for revenue generation and passenger management.
+AstroBookings needs a way to record and manage passenger bookings for rocket launches. 
+Currently, the system lacks the ability to book tickets, track passenger information, or manage booking statuses. 
+This functionality is critical for revenue generation and passenger management.
+No uder identity system is in place, anyone can book a ticket.
 
 ### User Stories
 

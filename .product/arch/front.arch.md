@@ -41,6 +41,7 @@ front/astro-bookings/src/
 |------|---------|
 | `src/assets/` | Shared styles and images. |
 | `src/components/LaunchStatusBadge.vue` | Reusable UI component for displaying launch status. |
+| `src/components/BookingStatusBadge.vue` | Reusable UI component for displaying booking status. |
 
 ## Key contracts
 
@@ -52,6 +53,10 @@ The Frontend consumes the Backend REST API. Key service functions include:
 | `rocketService` | `createRocket` | `POST /rockets` |
 | `launchService` | `getAllLaunches` | `GET /launches` |
 | `launchService` | `createLaunch` | `POST /launches` |
+| `bookingService` | `getAllBookings` | `GET /bookings` |
+| `bookingService` | `createBooking` | `POST /bookings` |
+| `bookingService` | `cancelBooking` | `PATCH /bookings/{id}` |
+| `healthService` | `getHealth` | `GET /health` |
 
 ## Dependencies between domains
 
